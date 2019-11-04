@@ -11,6 +11,18 @@
 <h1 id="title">Survey Form</h1>
 <p id="description">Quick Google Analytics Survey</p>
 <form id="survey-form">
+  <div class="form-div">
+    <label id="name-label" for = "name"> Name <br>
+        <input id="name" type="text" required placeholder="Enter your name!"><br>
+        <span class="validity"></span> </div>
+  <div class="form-div">      
+    <label id="email-label" for = "email"> Email <br>    
+        <input id="email" type="email" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$" 
+        required placeholder="Enter your email!">
+        <span class="validity"></span>
+    </label>
+    
+  </div>
 </form>
     <script  src="js/index.js"></script>
   </body>
