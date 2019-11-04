@@ -1,0 +1,60 @@
+html {
+  font-size: 100%
+}
+body{
+  background-color: #f4f4f4;
+  font: 1em 'PLayfair Display', Serif;
+  background-image: linear-gradient( 115deg, rgba(58, 58, 158, 0.8), rgba(136, 136, 206, 0.7) ), url(https://raw.githubusercontent.com/lasjorg/fcc-form-example-image/master/67103817-7c51e200-f18b-11e9-975f-f74561336a9a-lj.jpg);
+}
+h1{
+  font:2.875em 'PT Sans'Sans-Serif;
+}
+p{
+  margin: 0.3em;
+}
+#title, #description{
+  text-align: center;
+}
+form {
+    background-color: #292845;
+    padding: 1em;
+    border: 1px solid #2A2947;
+    margin: 2rem auto 0 auto;
+    max-width: 700px;
+    padding: 1em;
+}
+
+.form-div {
+  display: grid;
+  grid-template-columns: 100%;
+  align-items: center;
+  margin-bottom: 15px;
+}
+input[type=text],
+ input[type=email],
+ input[type=number],
+ textarea,
+ select {
+   padding: 8px 5px;
+ }
+
+ .input-group label {
+   display: block;
+   padding-left: 15px;
+   padding-bottom: 5px;
+   text-indent: -15px;
+   text-align: left;
+ }
+ .button{
+   background-color: #76c7c1;
+   color: #3AAF65;
+   cursor: pointer;
+   border-width: 0px 0px 5px 0px;
+   border-style: solid;
+   width : 100%
+ }
+label,form-div p {
+  text-align: left;
+  grid-column: 1/2;
+  align-items: start;
+}
