@@ -1,60 +1,114 @@
 html {
-  font-size: 100%
+  font-size: 100%;
+  color: white;
 }
-body{
-  background-color: #f4f4f4;
-  font: 1em 'PLayfair Display', Serif;
+
+body {
   background-image: linear-gradient( 115deg, rgba(58, 58, 158, 0.8), rgba(136, 136, 206, 0.7) ), url(https://raw.githubusercontent.com/lasjorg/fcc-form-example-image/master/67103817-7c51e200-f18b-11e9-975f-f74561336a9a-lj.jpg);
+
+  font: 1em 'Playfair Display', Serif color: white; ;
+
 }
-h1{
-  font:2.875em 'PT Sans'Sans-Serif;
+
+h1 {
+  font: 2.875em 'PT Sans', Sans-Serif;
+  color: white;
 }
-p{
-  margin: 0.3em;
+
+p {
+  margin-block-end: 0.3em;
+  color: white;
 }
-#title, #description{
+
+#title,
+#description {
   text-align: center;
 }
+
 form {
     background-color: #292845;
     padding: 1em;
-    border: 1px solid #2A2947;
+    border: 1px solid #292845;
     margin: 2rem auto 0 auto;
     max-width: 700px;
     padding: 1em;
 }
 
-.form-div {
+.form-group {
   display: grid;
   grid-template-columns: 100%;
   align-items: center;
   margin-bottom: 15px;
 }
-input[type=text],
- input[type=email],
- input[type=number],
- textarea,
- select {
-   padding: 8px 5px;
- }
 
- .input-group label {
-   display: block;
-   padding-left: 15px;
-   padding-bottom: 5px;
-   text-indent: -15px;
-   text-align: left;
- }
- .button{
-   background-color: #76c7c1;
-   color: #3AAF65;
-   cursor: pointer;
-   border-width: 0px 0px 5px 0px;
-   border-style: solid;
-   width : 100%
- }
-label,form-div p {
+input[type=text],
+input[type=email],
+input[type=number],
+textarea,
+select {
+  padding: 8px 5px;
+}
+
+.input-group label {
+  display: block;
+  padding-left: 15px;
+  padding-bottom: 5px;
+  text-indent: -15px;
   text-align: left;
-  grid-column: 1/2;
-  align-items: start;
+}
+
+.input-group input {
+  width: 13px;
+  height: 13px;
+  padding: 0;
+  margin:0;
+  vertical-align: bottom;
+  position: relative;
+  top: -3px;
+  *overflow: hidden;
+  text-align: left;
+}
+
+.button {
+  background-color: #76c7c1;
+  color: #2d6363;
+  cursor: pointer;
+  border-width: 0px 0px 3px 0px;
+  border-style: solid;
+  border-color: #5d9e9a;
+  border-radius: 5px;
+  font-family: 'PT Sans', Sans-Serif;
+  padding: 10px;
+  text-transform: uppercase;
+}
+
+.button:hover {
+  background-color: #8ed2d1;
+  border-color: #2d6363;
+}
+
+@media (min-width: 400px) {
+  .form-group {
+    display: grid;
+    grid-template-columns: 200px 1fr;
+    grid-gap: 16px;
+  }
+
+  .form-group p {
+    margin-block-end: 1em;
+  }
+
+  label,
+  .form-group p {
+    text-align: center;
+    grid-column: 1 / 2;
+    align-items: start;
+  }
+
+  input,
+  button,
+  .input-group {
+    grid-column: 2 / 3;
+    margin-bottom: 0;
+  }
 }
